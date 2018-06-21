@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+  <RelativeLayout
+      android:id="@+id/qr_code_header_bar"
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/qr_code_title_bar_height"
+      android:background="@color/qr_code_scan_gray"
+      >
+    <ImageView
+        android:padding="10dp"
+        android:id="@+id/qr_code_scan_back"
+        android:layout_marginLeft="20dp"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/qr_scan_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:padding="10dp"
+        android:visibility="invisible"
+        android:id="@+id/qr_code_scan_help"
+        android:layout_marginRight="20dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:src="@mipmap/qr_code_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+  </RelativeLayout>
+  <SurfaceView
+      android:layout_below="@id/qr_code_header_bar"
+      android:id="@+id/preview_view"
+
+      android:layout_width="fill_parent"
+
+      android:layout_height="fill_parent"/>
+
+  <com.tckj.qr_code_scan_core.ViewfinderView
+      android:layout_below="@id/qr_code_header_bar"
+      android:id="@+id/viewfinder_view"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:layout_centerInParent="true"
+       />
+
+
+
+</RelativeLayout>

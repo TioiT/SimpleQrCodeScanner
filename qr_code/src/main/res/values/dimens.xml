@@ -1,0 +1,5 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="qr_code_text_size_13sp">13dp</dimen>
+    <dimen name="qr_code_title_bar_height">50dp</dimen>
+</resources>

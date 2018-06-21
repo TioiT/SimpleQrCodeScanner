@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/qr_code_scan_gray"
+    tools:context="com.tckj.qr_code.QrCodeGenerateActivity">
+
+    <RelativeLayout
+        android:id="@+id/qr_code_header_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/qr_code_title_bar_height"
+        android:background="@color/qr_code_scan_gray"
+        >
+        <ImageView
+            android:padding="10dp"
+            android:id="@+id/qr_code_generate_back"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/qr_scan_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:padding="10dp"
+            android:visibility="visible"
+            android:id="@+id/qr_code_generate_more"
+            android:layout_marginRight="20dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/qr_code_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/qr_code_show_genetate_code"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
