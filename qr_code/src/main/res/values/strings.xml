@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">qr_code</string>
+    <string name="app_name">QrcodeScanner</string>
     <string name="hand_input">手动输入</string>
     <string name="qc_code_close">关闭</string>
     <string name="qr_code_auto_scan_notification">将二维码放入框内，即可自动扫描</string>

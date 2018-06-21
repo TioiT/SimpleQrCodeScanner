@@ -1,1 +1,1 @@
-include ':app', ':qr_code_lib', ':qr_code'
+include ':qr_code_lib', ':qr_code'

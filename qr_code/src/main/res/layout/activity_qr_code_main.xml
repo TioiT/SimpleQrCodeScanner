@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="10dp"
-    tools:context="com.tckj.qr_code.QrCodeMainActivity">
+    tools:context="com.qrcode.qr_code.QrCodeMainActivity">
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -34,18 +34,11 @@
             android:text="生成二维码"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
-        <EditText
-            android:lines="1"
-            android:inputType="text"
-            android:layout_below="@id/qrcode_generate_bitmap"
-            android:hint="请输入图片名称（不包含后缀名）"
-            android:id="@+id/qrcode_image_name"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+
         <Button
             android:layout_marginTop="10dp"
             android:layout_centerHorizontal="true"
-            android:layout_below="@id/qrcode_image_name"
+            android:layout_below="@id/qrcode_generate_bitmap"
             android:id="@+id/qrcode_decode_bitmap_select"
             android:text="选择图片解码"
             android:layout_width="wrap_content"

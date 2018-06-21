@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.tckj.qr_code">
+    package="com.qrcode.qr_code">
 
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.VIBRATE" />
@@ -14,17 +14,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".QrCodeMainActivity">
+        <activity android:name="com.qrcode.qr_code.QrCodeMainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".QrCodeScanActivity" />
-        <activity android:name=".QrCodeGenerateActivity" />
+        <activity android:name="com.qrcode.qr_code.QrCodeScanActivity" />
+        <activity android:name="com.qrcode.qr_code.QrCodeGenerateActivity" />
         <activity
-            android:name=".QrCodeDecodeActivity"
+            android:name="com.qrcode.qr_code.QrCodeDecodeActivity"
             android:theme="@style/QrCodeDecodeEmptyTheme"
              />
 

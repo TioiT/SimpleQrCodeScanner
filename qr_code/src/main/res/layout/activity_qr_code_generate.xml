@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/qr_code_scan_gray"
-    tools:context="com.tckj.qr_code.QrCodeGenerateActivity">
+    tools:context="com.qrcode.qr_code.QrCodeGenerateActivity">
 
     <RelativeLayout
         android:id="@+id/qr_code_header_bar"

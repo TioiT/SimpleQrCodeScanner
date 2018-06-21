@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.tckj.qr_code.QrCodeDecodeActivity">
+    tools:context="com.qrcode.qr_code.QrCodeDecodeActivity">
     <RelativeLayout
         android:visibility="invisible"
         android:id="@+id/decode_qr_code_header_bar"
