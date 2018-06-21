@@ -53,18 +53,7 @@ public class QrCodeDecodeActivity extends AppCompatActivity implements View.OnCl
     private void initData() {
         final String imagePath = getIntent().getStringExtra(QrCodeConstant.QR_CODE_DECODE_IMAGE_PATH);
         if(!TextUtils.isEmpty(imagePath)) {
-            showProgressDialog("正在解析，请稍后",false);
-//            new Thread(new Runnable() {
-//                @Override
-//                public void run() {
-//                    try {
-//                        Thread.sleep(5000);
-//                    } catch (InterruptedException e) {
-//                        e.printStackTrace();
-//                    }
-//                    decodeQrCode(imagePath,null);
-//                }
-//            }).start();
+            showProgressDialog("正在解析，请稍后",false);       
             decodeQrCode(imagePath,null);
         }else {
             startSelectImage();
